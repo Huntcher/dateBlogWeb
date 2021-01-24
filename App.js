@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
   login:{
     width: '60%',
     height: 300,
-    backgroundColor:'#CBC7C7',
+    backgroundColor:'#EFECEC',
     borderRadius: 10,
     alignContent: 'center',
     alignItems:'center',
