@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { ScrollView, StyleSheet, Text, TextInput, TouchableHighlight, TouchableOpacity, View } from 'react-native';
+import { SafeAreaView, ScrollView, StyleSheet, Text, TextInput, TouchableHighlight, TouchableOpacity, View } from 'react-native';
 import { Icon } from 'react-native-elements';
 import { useNavigation } from '@react-navigation/native';
 import { Avatar } from 'react-native-elements';
@@ -76,17 +76,15 @@ return(
       <View style={styles.header}>
           <Text style={styles.headerTitle}>Conoce a tu crush</Text>
       </View>
-      <ScrollView >
-        <View style={styles.body}>
+          <SafeAreaView style={styles.body}>
+              <ScrollView >
+                <View style={styles.viewChat}>
+                    
+                    {getListMessage()}
 
-        
-          <View style={styles.viewChat}>
-              
-              {getListMessage()}
-
-          </View>
-        </View>
-      </ScrollView>
+                </View>
+              </ScrollView>
+          </SafeAreaView>
       <View style={styles.header}>
           <Text style={styles.headerTitle}>By OsoHorney</Text>
       </View>
@@ -112,6 +110,8 @@ const styles = StyleSheet.create({
     alignItems:'center',
   },
   body:{
+    width: '100%',
+    height: '86%',
     alignContent: 'center',
     alignItems:'center',
     justifyContent: 'center'
@@ -192,7 +192,7 @@ const styles = StyleSheet.create({
   },
   viewChat:{
     width:'100%',
-    height: '85%',
+    height: '100%',
     flexDirection: 'column',
     alignContent: 'center',
     alignItems:'center',
