@@ -91,7 +91,7 @@ return(
           </View>
       </View>
       <View style={styles.header}>
-          <Text style={styles.headerTitle}>By OsoHorney</Text>
+          <Text style={styles.headerTitle}>By AdminCrush</Text>
       </View> 
       <StatusBar style="auto" />
     </View>
