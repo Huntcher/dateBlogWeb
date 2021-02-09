@@ -27,6 +27,7 @@ const DateScreen = ({ navigation }) => {
     mensajes:[
 
 
+      
       {id: '1',user: 'Admin',msg: 'Buenas tardes a todos, bienvenidos... Conocen las reglas, sean honestos, abiertos y respetuosos, les recuerdo que este es un grupo privado que responde al evento #FindYourRealCrush022021, los mensajes del mes pasado quedarán disponibles al iniciar con su contraseña anterior. Diviertanse y que encuentren a su crush!!!',date: '01/02/2021 08:19',place: 'CDMX',pic:'https://huntcherapp.s3.us-east-2.amazonaws.com/dateblog/images/People/HombresMin/pexels-splitshire-1702.jpg', type: 2},
       {id: '2',user: 'Aguss',msg: 'Hola Admin gracias por este espacio que nos das, soy Agustin tengo 30 años me encanta viajar y conocer cosas nuevas',date: '01/02/2021 19:03',place: 'CDMX',pic:'https://huntcherapp.s3.us-east-2.amazonaws.com/dateblog/images/People/HombresMin/pexels-marcelo-chagas-3149036.jpg', type: 1},
       {id: '3',user: 'Mike Bloom',msg: 'Hey todos! soy Miguel ojala podamos conocernos, trabajo en inversiones y ventas.',date: '01/02/2021 20:21',place: 'CDMX',pic:'https://huntcherapp.s3.us-east-2.amazonaws.com/dateblog/images/People/HombresMin/pexels-yogendra-singh-1760900.jpg', type: 1},
@@ -158,9 +159,13 @@ const DateScreen = ({ navigation }) => {
       {id: '129',user: 'Paco Flip',msg: 'Sin miedo a equivocarme, Vicky es la princesa de este cuento... 🤩🌟',date: '27/02/2021 21:56',place: 'CDMX',pic:'https://huntcherapp.s3.us-east-2.amazonaws.com/dateblog/images/People/HombresMin/pexels-mentatdgt-1138903.jpg', type: 1},
       {id: '130',user: 'VickyLu',msg: 'Yaaa... dejenme en paz!! muero de pena!!!',date: '27/02/2021 22:27',place: 'CDMX',pic:'https://huntcherapp.s3.us-east-2.amazonaws.com/dateblog/images/People/MujeresMin/pexels-marcelo-chagas-2005011.jpg', type: 1},
       {id: '131',user: 'Sistema',msg: 'Vicky Lu y Paco Flip han iniciado una platica privada',date: '27/02/2021 22:34',place: 'Match',pic:'https://huntcherapp.s3.us-east-2.amazonaws.com/dateblog/images/Pics/SexyMin/pexels-tim-mossholder-3690735.jpg', type: 2},
-      {id: '132',user: 'Its a date!',msg: 'Vicky Lu y Paco Flip comenzaron una cita en persona!!!',date: '28/02/2021 18:46',place: 'Date',pic:'https://huntcherapp.s3.us-east-2.amazonaws.com/dateblog/images/Pics/SexyMin/pexels-w-r-1450155.jpg', type: 2},
-      {id: '133',user: 'On Fire',msg: 'Vicky Lu y Paco Flip esta on fire!!!',date: '28/02/2021 18:47',place: 'Crush',pic:'https://huntcherapp.s3.us-east-2.amazonaws.com/dateblog/images/Pics/SexyMin/pexels-valeria-boltneva-597200.jpg', type: 2},
+      {id: '132',user: 'Abiix',msg: 'Nooo... termine toda solaaa 😭😭😭😭 a ver que se me ocurre',date: '28/02/2021 14:33',place: 'CDMX',pic:'https://huntcherapp.s3.us-east-2.amazonaws.com/dateblog/images/People/MujeresMin/pexels-harsh-kushwaha-2058664.jpg', type: 1},
+      {id: '133',user: 'Rey Sosa',msg: 'Sabes que solo tienes que llamarme y tu tristeza se acaba Abiix',date: '28/02/2021 16:54',place: 'CDMX',pic:'https://huntcherapp.s3.us-east-2.amazonaws.com/dateblog/images/People/HombresMin/pexels-hamid-tajik-6207046.jpg', type: 1},
+      {id: '134',user: 'Its a date!',msg: 'Vicky Lu y Paco Flip comenzaron una cita en persona!!!',date: '28/02/2021 18:46',place: 'Date',pic:'https://huntcherapp.s3.us-east-2.amazonaws.com/dateblog/images/Pics/SexyMin/pexels-w-r-1450155.jpg', type: 2},
+      {id: '135',user: 'On Fire',msg: 'Vicky Lu esta on fire!!!',date: '28/02/2021 18:47',place: 'Crush',pic:'https://huntcherapp.s3.us-east-2.amazonaws.com/dateblog/images/Pics/SexyMin/pexels-valeria-boltneva-597200.jpg', type: 2},
       {id: '134',user: 'Admin',msg: 'Buenas noches a todos, espero que disfrutaran este su evento #FindYourRealCrush022021, los mensajes del mes pasado quedarán disponibles al iniciar con su contraseña anterior, en breve se les enviarán sus nuevas contraseñas para el próximo evento #FindYourRealCrush032021...',date: '28/02/2021 23:22',place: 'CDMX',pic:'https://huntcherapp.s3.us-east-2.amazonaws.com/dateblog/images/People/HombresMin/pexels-splitshire-1702.jpg', type: 2},
+
+
 
 
     ]} ;
