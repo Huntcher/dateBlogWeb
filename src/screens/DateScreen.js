@@ -337,7 +337,7 @@ const styles = StyleSheet.create({
     color: 'black'
   },
   viewMessage: {
-    width: '80%',
+    width: '90%',
     height: 120,
     backgroundColor: '#CECBCB', 
     borderRadius: 5,
