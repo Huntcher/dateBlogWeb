@@ -366,7 +366,7 @@ const styles = StyleSheet.create({
     flex:1,
   },
   imageViewMessage:{
-    width: '30%',
+    width: '35%',
     height: '100%',
     alignItems:'center',
     flexDirection:'column',
@@ -380,7 +380,7 @@ const styles = StyleSheet.create({
     justifyContent:'space-between'
   },
   textMessage: {
-    width: '70%',
+    width: '65%',
     height: '100%',
     alignItems:'center',
     justifyContent: 'center', 
