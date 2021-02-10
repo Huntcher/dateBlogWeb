@@ -179,13 +179,13 @@ const DateScreen = ({ navigation }) => {
                   <Text style={styles.labelFrom}>De: {item.user}</Text>
             </View>
               <View style={styles.imageMessage}>
-                  <View style={{width:'40%', height:'100%', justifyContent:'center', alignItems:'center'}}>
+                  <View style={{width:'41%', height:'100%', justifyContent:'center', alignItems:'center'}}>
                       <Avatar rounded source={{uri: item.pic}} size="medium"/>
                   </View>
-                  <View style={{width:'20%', height:'100%', justifyContent:'center', alignItems:'center'}}>
+                  <View style={{width:'18%', height:'100%', justifyContent:'center', alignItems:'center'}}>
                       <Icon name='email-send' type='material-community' style={styles.icon}/>
                   </View>
-                  <View style={{width:'40%', height:'100%', justifyContent:'center', alignItems:'center'}}>
+                  <View style={{width:'41%', height:'100%', justifyContent:'center', alignItems:'center'}}>
                       <Avatar rounded source={{ uri: item.picReceiver }} size="medium"/>
                   </View>
               </View>
@@ -365,7 +365,7 @@ const styles = StyleSheet.create({
     flex:1,
   },
   imageViewMessage:{
-    width: '35%',
+    width: '33%',
     height: '100%',
     alignItems:'center',
     flexDirection:'column',
@@ -379,7 +379,7 @@ const styles = StyleSheet.create({
     justifyContent:'space-between'
   },
   textMessage: {
-    width: '65%',
+    width: '67%',
     height: '100%',
     alignItems:'center',
     justifyContent: 'center', 
@@ -401,11 +401,11 @@ const styles = StyleSheet.create({
   },
   labelDate: {
     color: '#686464',
-    fontSize: 18,
+    fontSize: 17,
   },
   labelHour: {
     color: '#686464',
-    fontSize: 12,
+    fontSize: 11,
   },
   labelNameMessage:{
     color: '#686464',
