@@ -180,13 +180,13 @@ const DateScreen = ({ navigation }) => {
                   <Text style={styles.labelFrom}>De: {item.user}</Text>
             </View>
               <View style={styles.imageMessage}>
-                  <View style={{width:'33%', height:'100%', justifyContent:'center', alignItems:'center'}}>
+                  <View style={{width:'40%', height:'100%', justifyContent:'center', alignItems:'center'}}>
                       <Avatar rounded source={{uri: item.pic}} size="medium"/>
                   </View>
-                  <View style={{width:'33%', height:'100%', justifyContent:'center', alignItems:'center'}}>
+                  <View style={{width:'20%', height:'100%', justifyContent:'center', alignItems:'center'}}>
                       <Icon name='email-send' type='material-community' style={styles.icon}/>
                   </View>
-                  <View style={{width:'33%', height:'100%', justifyContent:'center', alignItems:'center'}}>
+                  <View style={{width:'40%', height:'100%', justifyContent:'center', alignItems:'center'}}>
                       <Avatar rounded source={{ uri: item.picReceiver }} size="medium"/>
                   </View>
               </View>
@@ -345,7 +345,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   icon:{
-    size: 20,
+    size: 15,
     color: 'black'
   },
   viewMessage: {
