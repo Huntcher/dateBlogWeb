@@ -175,20 +175,28 @@ const DateScreen = ({ navigation }) => {
       type.push(
 
         <View key={item.id} style={ item.type == 1 ? styles.viewMessage : styles.systemViewMessage}>
-        <View style={styles.imageMessage}>
-          <View style={{width:'33%', height:'100%', justifyContent:'center', alignItems:'center'}}>
-              <Avatar rounded source={{uri: item.pic}} size="medium"/>
+          <View style={styles.imageViewMessage}>
+            <View style={{width:'100%', height:'20%'}}>
+                  <Text style={styles.labelFrom}>De: {item.user}</Text>
+            </View>
+              <View style={styles.imageMessage}>
+                  <View style={{width:'33%', height:'100%', justifyContent:'center', alignItems:'center'}}>
+                      <Avatar rounded source={{uri: item.pic}} size="medium"/>
+                  </View>
+                  <View style={{width:'33%', height:'100%', justifyContent:'center', alignItems:'center'}}>
+                      <Icon name='email-send' type='material-community' style={styles.icon}/>
+                  </View>
+                  <View style={{width:'33%', height:'100%', justifyContent:'center', alignItems:'center'}}>
+                      <Avatar rounded source={{ uri: item.picReceiver }} size="medium"/>
+                  </View>
+              </View>
+              <View style={{width:'100%', height:'20%'}}>
+                <Text style={styles.labelFrom}>Para: {item.receiver}</Text>
+            </View>
           </View>
-          <View style={{width:'33%', height:'100%', justifyContent:'center', alignItems:'center'}}>
-              <Icon name='email-send' type='material-community' style={styles.icon}/>
-          </View>
-          <View style={{width:'33%', height:'100%', justifyContent:'center', alignItems:'center'}}>
-              <Avatar rounded source={{ uri: item.picReceiver }} size="medium"/>
-          </View>
-        </View>
+        
         <View style={styles.textMessage}>
           <View style={styles.messageArea}>
-          <Text style={styles.labelNameMessage}>{item.user}</Text>
             <Text style={styles.labelMessage}>{item.msg}</Text>
           </View>
           <View style={styles.messageDate}> 
@@ -319,7 +327,11 @@ const styles = StyleSheet.create({
   iconLabel:{
     width: '15%',
     height:'100%',
-    
+  },
+  labelFrom:{
+    color: '#686464',
+    fontSize: 16,
+    margin: 3,
   },
   inputLabel:{
     width: '85%',
@@ -337,29 +349,35 @@ const styles = StyleSheet.create({
     color: 'black'
   },
   viewMessage: {
-    width: '90%',
-    height: 120,
+    width: '98%',
+    height: 130,
     backgroundColor: '#CECBCB', 
     borderRadius: 5,
-    margin: 15,
+    margin: 10,
     flexDirection: 'row',
   },
   systemViewMessage: {
-    width: '90%',
-    height: 120,
+    width: '98%',
+    height: 130,
     backgroundColor: '#E4A79A', 
     borderRadius: 5,
-    margin: 15,
+    margin: 10,
     flexDirection: 'row',
     flex:1,
   },
-  imageMessage:{
+  imageViewMessage:{
     width: '30%',
     height: '100%',
     alignItems:'center',
+    flexDirection:'column',
+    justifyContent:'center',
+  },
+  imageMessage:{
+    width: '100%',
+    height: '60%',
+    alignItems:'center',
     flexDirection:'row',
     justifyContent:'space-between'
-    
   },
   textMessage: {
     width: '70%',
