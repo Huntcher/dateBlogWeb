@@ -345,7 +345,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   icon:{
-    fontSize: 69,
+    size: 20,
     color: 'black'
   },
   viewMessage: {
