@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, TextInput, TouchableHighlight, TouchableOpacity, View } from 'react-native';
+import { ImageBackground, StyleSheet, Text, TextInput, TouchableHighlight, TouchableOpacity, View } from 'react-native';
 import { Icon } from 'react-native-elements';
 
 /*
@@ -15,6 +15,8 @@ const LoginScreen = ({ navigation }) => {
 
     const [value, onChangeText] = React.useState();
     const [pass, onChangePass] = React.useState();
+    const image = { uri: "https://huntcherapp.s3.us-east-2.amazonaws.com/dateblog/images/Pics/Sexy/pexels-alleksana-4474754+(1).jpg" };
+
 
 
 const logUser =() => {
@@ -39,9 +41,12 @@ const logUser =() => {
 return(
     <View style={styles.container}>
       <View style={styles.header}>
-          <Text style={styles.headerTitle}>Encuentra a tu Crush</Text>
+          <Text style={styles.headerTitle}>¡Encuentra a tu Crush!</Text>
       </View>
+      
+      <ImageBackground source={image} style={styles.image}>
       <View style={styles.body}>
+      
           <View style={styles.login}>
               <View style={styles.titleView}>
                   <Text style={styles.loginTitle}>Iniciar sesión</Text>
@@ -89,7 +94,9 @@ return(
                 </TouchableOpacity>
               </View>
           </View>
-      </View>
+          </View>
+          </ImageBackground>
+      
       <View style={styles.header}>
           <Text style={styles.headerTitle}>By AdminCrush</Text>
       </View> 
@@ -99,18 +106,25 @@ return(
 }
 
 const styles = StyleSheet.create({
+  image: {
+    flex: 1,
+    resizeMode: "cover",
+    justifyContent: "center"
+  },
+  
   container: {
     flex: 1,
     width: '100%',
     height:'100%',
-    backgroundColor: '#fff',
-    flexDirection: 'column'
+    backgroundColor: '#DC341B',
+    flexDirection: 'column',
+
   },
   header:{
     width: '100%',
     height: '10%',
     flexDirection: 'row',
-    backgroundColor: '#C92603',
+    backgroundColor: '#DC341B',
     alignContent: 'center',
     justifyContent: 'center',
     alignItems:'center',
@@ -135,6 +149,7 @@ const styles = StyleSheet.create({
     alignItems:'center',
     justifyContent: 'center',
     flexDirection:'column',
+    opacity: .9,
   },
   loginTitle: {
     color: '#504E4E',
@@ -168,7 +183,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   btnView:{
-    backgroundColor: '#D61A1A',
+    backgroundColor: '#DC341B',
     width: '90%',
     height: '80%',
     alignContent: 'center',
