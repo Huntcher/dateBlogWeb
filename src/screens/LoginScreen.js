@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '10%',
     flexDirection: 'row',
-    backgroundColor: 'black',
+    backgroundColor: '#C92603',
     alignContent: 'center',
     justifyContent: 'center',
     alignItems:'center',
